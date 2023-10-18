@@ -1,6 +1,12 @@
 name: zeemsonline Continuos Integration
 
 on:
+  workflow_dispatch:
+    inputs:
+      App:
+        description: 'zeems'
+        type: string
+        required: false
   push:
     branches: [ main ]
   pull_request:
@@ -8,7 +14,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     strategy:
       matrix:

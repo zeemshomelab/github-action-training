@@ -1,6 +1,12 @@
 name: Deploy to Ubuntu Server
 
 on:
+  workflow_dispatch:
+    inputs:
+      Test:
+        description: 'Test'
+        type: string
+        required: false
   push:
     branches:
       - main
