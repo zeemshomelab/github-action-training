@@ -1,6 +1,12 @@
 name: Build and Deploy
 
 on:
+  workflow_dispatch:
+    inputs:
+      servers:
+        description: 'Servers'
+        type: string
+        required: false
   push:
     branches:
       - main  # or master, based on your default branch
