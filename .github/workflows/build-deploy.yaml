@@ -1,0 +1,21 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main  # or change to 'master' if your default branch is master
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted  # this ensures it runs on your self-hosted runner
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Start the server
+      run: npm start &
+
