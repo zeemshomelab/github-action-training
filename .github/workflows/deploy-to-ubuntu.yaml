@@ -20,3 +20,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.SERVER_PORT }}
         
+    - name: Ping server
+      run: |
+        ping -c 4 your_server_ip
+        hostname
