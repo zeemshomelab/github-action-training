@@ -17,5 +17,5 @@ jobs:
       run: npm install
 
     - name: Start the server using PM2
-      run: pm2 start server.js --name "myapp" || pm2 restart "myapp"
+      run: pm2 start server.js --name "simple-node-server" || pm2 restart "simple-node-server"
 
