@@ -1,4 +1,4 @@
-name: NPM CI
+name: Zeemsonline Continuos Integration
 
 on:
   push:
