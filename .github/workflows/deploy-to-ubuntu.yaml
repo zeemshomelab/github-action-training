@@ -22,5 +22,5 @@ jobs:
         
     - name: Ping server
       run: |
-        ping -c 4 your_server_ip
+        ping -c 4 ${{ secrets.SERVER_HOST }}
         hostname
