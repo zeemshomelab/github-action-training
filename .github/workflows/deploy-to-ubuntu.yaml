@@ -30,3 +30,4 @@ jobs:
       run: |
         ping -c 4 ${{ secrets.SERVER_HOST }}
         hostname
+        date
