@@ -1,4 +1,4 @@
-name: Zeemsonline Continuos Integration
+name: zeemsonline Continuos Integration
 
 on:
   push:
