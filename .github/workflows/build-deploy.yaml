@@ -3,11 +3,11 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main  # or change to 'master' if your default branch is master
+      - main  # or master, based on your default branch
 
 jobs:
-  build-and-deploy:
-    runs-on: Linux  # this ensures it runs on your self-hosted runner
+  deploy:
+    runs-on: self-hosted
 
     steps:
     - name: Checkout code
@@ -16,6 +16,6 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Start the server
-      run: npm start &
+    - name: Start the server using PM2
+      run: pm2 start server.js --name "myapp" || pm2 restart "myapp"
 
