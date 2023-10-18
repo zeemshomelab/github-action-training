@@ -7,10 +7,10 @@ on:
         description: 'zeems'
         type: string
         required: false
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  # push:
+  #   branches: [ main ]
+  # pull_request:
+  #   branches: [ main ]
 
 jobs:
   build:
