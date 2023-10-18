@@ -3,10 +3,10 @@ name: Deploy to Ubuntu Server
 on:
   workflow_dispatch:
     inputs:
-      Test:
-        description: 'Test'
+      Server_Host:
+        description: 'Add Server Host'
         type: string
-        required: false
+        required: True
   # push:
   #   branches:
   #     - main
