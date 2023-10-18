@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    background-color: #ffffff;
+    background-color: #21f1f8;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -18,10 +18,10 @@ body {
 }
 
 h1 {
-    color: #333333;
+    color: #000000;
     margin-top: 0;
 }
 
 p {
-    color: #666666;
+    color: #0509ff;
 }
